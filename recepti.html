@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dobrodosli u Kuhinju moje bake">
+    <meta name="keywords" content="kuhinja, recepti, hrana, slatko, slano, kuvanje">
+    <meta name="author" content="Strahinja Pavlovic">
+    <title>Bakina Kuhinja</title>
+    <link rel="icon" type="image/x-icon" href="slike/Logo.png">
+    <link rel="stylesheet" href="css/mojcss.css">
+</head>
+<body>
+    <nav class="navigacija">
+        <div class="logo-tema-dugme">
+            <div class="navigacija-ikonica">
+                <a href="index.html"><img src="slike/Logo.png" alt=""></a>
+            </div>
+            <div class="tamna-tema">
+                <span class="dugme-tamna-tema"></span>
+                <span>Promenite temu sajta</span>
+              </div>
+            </div>
+        </div>
+        <button class="navigacija-toggle">
+            <span class="hamburger"></span>
+        </button>
+        <ul class="navigacija-meni">
+            
+            <li><a href="index.html">Naslovna</a></li>
+            <li><a href="onama.html">O Nama</a></li>
+            <li class="opadajuci">
+                <a href="#">Kuhinja</a>
+                <ul class="opadajuci-meni">
+                    <li><a href="recepti.html">Recepti</a></li>
+                    <li><a href="preporuke.html">Preporuke</a></li>
+                </ul>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+
+
+    <div class="naslov-baner">
+        <div class="naslov-glavna">
+            <div class="naslov-kontent">
+                <h1>Recepti</h1>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="slajder">
+            <div class="lista-slika" id="lista-slika">
+                <img src="slike/snenokle.jpg" width="770" alt="">
+                <img src="slike/strudlamak.jpg" width="770" alt="">
+                <img src="slike/oblatne.jpg" width="770" alt="">
+            </div>
+            <div class="slajder-dugme">
+                <div class="pos-dugme" onclick="pomeriSliku(0)"></div>
+                <div class="pos-dugme" onclick="pomeriSliku(1)"></div>
+                <div class="pos-dugme" onclick="pomeriSliku(2)"></div>
+            </div>
+        </section>
+    </main>
+
+    <div class="tekst">
+        <h2>Recept: Šnenokle</h2>
+        <p>Šnenokle su lagane pufnaste kuglice od tučenih belanaca, kuvane u vodi i prelivene kremom od žumanaca, mleka i šećera. 
+            Ova tradicionalna balkanska poslastica je osvežavajuća i nežna, često posipana mlevenim keksom ili kokosovim brašnom.</p><br><br>
+
+        <h2>Recept: Štrudla sa makom</h2>
+        <p>Strudla sa makom je tradicionalni kolač koji se pravi od tanko razvučenog testa punjenog mlevenim makom i šećerom.
+            Nakon što se testo obloži filom od maka, oblikuje se u rolnu, a zatim peče dok ne postane zlatno smeđa i hrskava.</p> 
+        <p>Po želji, može se posuti šećerom u prahu ili preliti glazurom od šećera i limunovog soka.
+            Ovaj kolač često se priprema za posebne prilike ili kao poslastica za različite svečane događaje..</p><br><br>
+
+        <h2>Recept: Oblatne</h2>
+        <p>Oblatne su popularna poslastica koja se sastoji od tankih slojeva hrskavog kolačića, obično punjenih kremom od šećera, putera i kakaa ili čokolade.
+            Ovi slojevi se postavljaju jedan na drugi, obično se pritiskaju zajedno, a zatim se kolač seče na manje komade.</p>
+            <p>Oblatne su često omiljena poslastica na Balkanu, ali su takođe popularne i u drugim delovima sveta pod različitim imenima, poput "Neapolitanera" u Italiji ili "Dobosh torte" u Mađarskoj.
+            Ova poslastica je jednostavna za pripremu i može se prilagoditi različitim ukusima i preferencijama.</p><br>
+
+    </div>
+
+    <footer>
+        <div class="futer-kontejner">
+            <div class="logo">
+            <img src="slike/logo.png" alt="Logo">
+            </div>
+            <div class="kolona">
+            <h4>Radno Vreme</h4>
+            <ul>
+                <li><a>PON - PET: 08:00 - 17:00</a></li>
+                <li><a>SUB - NED: 09:00 - 14:00</a></li>
+            </ul>
+            </div>
+            <div class="kolona">
+            <h4>Partneri</h4>
+            <ul>
+                <li><a>Podravka</a></li>
+                <li><a>Maggi</a></li>
+                <li><a>Matijević</a></li>
+            </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/slajder.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/tema.js"></script>
+</body>
+</html>
